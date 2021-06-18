@@ -1,0 +1,57 @@
+-- --------------------------------------------------------
+-- Host:                         127.0.0.1
+-- Server version:               8.0.21 - MySQL Community Server - GPL
+-- Server OS:                    Win64
+-- HeidiSQL Version:             11.3.0.6295
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+-- Dumping structure for table ques.question
+DROP TABLE IF EXISTS `question`;
+CREATE TABLE IF NOT EXISTS `question` (
+  `id` varchar(10) DEFAULT NULL,
+  `name` varchar(500) DEFAULT NULL,
+  `opt1` varchar(500) DEFAULT NULL,
+  `opt2` varchar(500) DEFAULT NULL,
+  `opt3` varchar(500) DEFAULT NULL,
+  `opt4` varchar(500) DEFAULT NULL,
+  `answer` varchar(500) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Data exporting was unselected.
+
+-- Dumping structure for table ques.student
+DROP TABLE IF EXISTS `student`;
+CREATE TABLE IF NOT EXISTS `student` (
+  `rollNo` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `fatherName` varchar(100) DEFAULT NULL,
+  `motherName` varchar(100) DEFAULT NULL,
+  `gender` varchar(10) DEFAULT NULL,
+  `contactNo` varchar(10) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `tenthUniversityName` varchar(200) DEFAULT NULL,
+  `tenthPercentage` varchar(5) DEFAULT NULL,
+  `tenthPassoutYear` varchar(5) DEFAULT NULL,
+  `twelveUniversityName` varchar(200) DEFAULT NULL,
+  `twelvePercentage` varchar(10) DEFAULT NULL,
+  `twelvePassoutYear` varchar(5) DEFAULT NULL,
+  `graduationUniversityName` varchar(200) DEFAULT NULL,
+  `graduationPercentage` varchar(10) DEFAULT NULL,
+  `graduationPassoutYear` varchar(5) DEFAULT NULL,
+  `address` varchar(500) DEFAULT NULL,
+  `marks` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Data exporting was unselected.
+
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
